@@ -26,7 +26,7 @@ def test_usuari_te_prestecs(usuari, r_esperat):
     Funció test per comprovar la funció usuari_te_prestecs() x nombre de vegades
     """
     r = usuari_te_prestecs(biblioteca,usuari)
-    assert r == r_esperat
+    assert r == 5
 
 # Comanda per pasar varis comprovacions amb dades diferents   
 @pytest.mark.parametrize("llibre, r_esperat",[("El Senyor dels Anells",67),("1984",53)])    
@@ -35,6 +35,6 @@ def test_dies_prestec_total(llibre, r_esperat):
     Funció test per comprovar la funció dies_prestec_total() x nombre de vegades
     """
     r = dies_prestec_total(biblioteca,llibre)
-    assert r == r_esperat
+    assert r == " "
     
 # Jan Pintó
